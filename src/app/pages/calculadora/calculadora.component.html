@@ -1,0 +1,39 @@
+<div class="jumbotron">
+  <h1> {{ title }} </h1>
+  <h4> {{ subtitle }} </h4>
+</div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <ul class="list-group text-center">
+            <li class="list-group-item">
+              <input type="button" *ngFor="let o of operator" (click)="imprime( opera.value )"
+              type="button" class="btn btn-secondary mr-2" value=" {{o}} " #opera>
+            </li>
+        </ul>
+        <ul class="list-group text-center">
+          <li class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-lg mr-3">7</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">8</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">9</button>
+          </li>
+          <li class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-lg mr-3">4</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">5</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">6</button>
+          </li>
+          <li class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-lg mr-3">1</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">2</button>
+            <button type="button" class="btn btn-secondary btn-lg mr-3">3</button>
+          </li>
+          <li class="list-group-item">
+            <button type="button" class="btn btn-secondary btn-lg mr-3">0</button>
+          </li>
+        </ul>
+      </div>
+    </div>
